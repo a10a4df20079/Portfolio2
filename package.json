@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.4",
+    "lightbox2": "^2.11.4",
+    "swap": "^0.0.3",
+    "swup": "^3.0.5"
+  }
+}

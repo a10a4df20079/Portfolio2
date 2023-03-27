@@ -1,0 +1,486 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* header */
+html{
+    font-size: 100%;
+}
+body{
+    font-family: 'Philosopher', sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+.logo{
+    width: 210px;
+    margin-top: 14px;
+}
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li{
+    width: 110px;
+    text-align: center;
+    margin-left: 36px;
+}
+.main-nav a{
+    color: #432;
+    display: block;
+
+}
+.main-nav a:hover{
+    background: #0bd;
+    color: #eee;
+    border-radius: 10%;
+    transition: all .3s ease-in;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.home-content{
+    text-align: l;
+    margin-top: 10%;
+}
+.home-content p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+/* 標題 */
+.page-title{
+    font-size: 5rem;
+    font-family: 'Philosopher',serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+/* 按鈕 */
+.button{
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button:hover{
+    background: #0090aa;
+}
+
+/* swup插件 */
+.transition-fade{
+    transition: 500ms;
+    opacity: 1;
+}
+html.is-animating .transition-fade{
+    opacity: 0;
+}
+
+
+/* 大型背景影像 */
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+#home{
+    background-image: url(../images/main-bg1.jpg);
+    min-height: 100vh;
+}
+
+/* News */
+#news{
+    background-image: url(../images/news-bg1.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+#news .page-title{
+    text-align: center;
+    color: #432;
+}
+
+
+/* 自傳 */
+.news-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+article{
+    width: 60%;
+    order: 2;
+}
+aside{
+    width: 22%;
+    order: 3;
+}
+.introduction-title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.introduction{
+    text-indent: 1rem;
+    text-align: justify;
+}
+.ad{
+    order: 1;
+}
+.post-info{
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+.post-data{
+    background: #0bd;
+    border-radius: 50%;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    font-size: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+.post-data span{
+    padding-top: 20px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.post-title{
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.post-title,.post-cat{
+    margin-left: 120px;
+}
+article img{
+    margin-bottom: 20px;
+}
+article p {
+    margin-bottom: 1rem;
+}
+.sub-title{
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+aside h3{
+    cursor: default;
+}
+aside p{
+    padding: 12px 10px;
+}
+.sub-menu{
+    margin-bottom: 60px;
+    list-style: none;
+}
+.sub-menu li{
+    border-bottom: 1px #ddd solid;
+    padding: 10px;
+    cursor: default;
+}
+
+.sub-menu a:hover{
+    color: #0bd;
+}
+
+/* Menu */
+#menu{
+    background-image: url(../images/menu-bg1.jpg);
+    min-height: 100vh;
+}
+.menu-content{
+    max-width: 560px;
+    margin-top: 10%;
+}
+.menu-content .page-title{
+    text-align: center;
+}
+.menu-content h2{
+    color: white;
+}
+.menu-content p{
+    font-size: 1.125rem;
+    text-indent: 1em;
+    margin: 10px 0 0;
+    color: white;
+    text-align: center;
+}
+.portfolio{
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.portfolio-nav{
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+.portfolio-nav li{
+    padding: 1%;
+    width: 10%;
+}
+.portfolio-nav a{
+    color: white;
+    display: block;
+    background: #0bd;
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow .15s,transform .15s;
+    touch-action: manipulation;
+    will-change: box-shadow,transform;
+}
+.portfolio-nav a:hover{
+    color: #432;
+    background: yellow;
+    box-shadow: 0px 10px 10px 0px orange;
+    transform: translateY(-2px);
+}
+
+/* swup插件 */
+.portfolio-nav{
+    transition: 500ms;
+    opacity: 1;
+}
+html.is-animating .transition-fade{
+    opacity: 0;
+}
+
+/* grid */
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+.container{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.big-box img{
+    height: 94%;
+    width: 100%;
+    object-fit: cover;
+}
+.button-87 {
+    width: 31%;
+    height: 100%;
+  margin: 0 auto;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.button-87 a{
+    display: block;
+}
+.video-container{
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  text-align: center;
+}
+iframe{
+    border-radius: 5%;
+}
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+.todolist{
+    margin-top: 1%;
+    width: 40%;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0; 
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+/* 手機板 */
+@media(max-width: 600px){
+    .page-title{
+        font-size: 2.5rem;
+    }
+    /* HEADER */
+    .main-nav{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li{
+        margin: 0 20px;
+    }
+
+    .home-content{
+        margin-top: 20%;
+    }
+    .page-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* News */
+    .news-contents{
+        flex-direction: column;
+    }
+    .ad{
+        display: none;
+    }
+    article,aside{
+        width: 100%;
+    }
+    #news .page-title{
+        margin-top: 30px;
+    }
+    aside{
+        margin-top: 60px;
+    }
+    .post-info{
+        margin-bottom: 30px;
+    }
+    .post-data{
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-data span{
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .post-title{
+        font-size: 1.375rem;
+    }
+    .post-cat{
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .post-title,.post-cat{
+        margin-left: 80px;
+    }
+    /*作品集 */
+    .menu-content{
+        margin-top: 20%;
+    }
+    .menu-content p{
+        background: rgba(27, 154, 185, 0.7);
+
+    }
+    .portfolio{
+        width: 80%;
+    }
+    .portfolio li{
+        width: 50%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .button-87{
+        padding: 10px 10px;
+    }
+    .big-box{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .big-box img{
+        height: 100%;
+    }
+    
+    .video-container iframe, .video-container object, .video-container embed {
+    /* position: absolute;
+    top: 0;left: 0; */
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    }
+
+}
+
+
+
