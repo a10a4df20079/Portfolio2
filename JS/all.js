@@ -1,14 +1,11 @@
 $(function(){
-  $('.top a').click(function(event){
+  $('.top a').on("click",function(event){
     event.preventDefault();
     $('html,body').animate({
       scrollTop: 0
     },500);
     })
   });
-
-
-
 //swup
 const swup = new Swup();
 
@@ -17,3 +14,4 @@ lightbox.option({
     'resizeDuration': 200,
     'wrapAround': true
   })
+  $(document).ready
